@@ -12,6 +12,6 @@ body {
 
 .content {
     flex-grow: 1; /* Allow the content to take up remaining space */
-    background-color: white; /* White background for the content */
+    background-color: #333333; /* White background for the content */
     padding: 20px; /* Optional: Add padding inside the content */
 }
