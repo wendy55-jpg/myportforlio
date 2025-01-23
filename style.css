@@ -6,7 +6,7 @@ body {
 
 .black-margin {
     width: 2in; /* Set the width to 1 inch */
-    background-color: FFB6C1; /* Pink color for the margin */
+    background-color: #FFB6C1; /* Pink color for the margin */
     height: 100vh; /* Full viewport height for the margin */
 }
 
