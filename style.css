@@ -1,13 +1,17 @@
 body {
-    margin: 0; /* Reset default margins */
+    margin: 0; /* Remove default margins */
     padding: 0;
-    display: flex;
-    background-color: black; /* Add black background for the margin */
+    display: flex; /* Use flexbox for side-by-side layout */
+}
+
+.black-margin {
+    width: 1in; /* Set the width to 1 inch */
+    background-color: black; /* Black color for the margin */
+    height: 100vh; /* Full viewport height for the margin */
 }
 
 .content {
-    margin-left: 1in; /* Create a 1-inch margin on the left */
-    background-color: white; /* Set the content background to white */
-    width: calc(100% - 1in); /* Adjust width to avoid overflow */
+    flex-grow: 1; /* Allow the content to take up remaining space */
+    background-color: white; /* White background for the content */
     padding: 20px; /* Optional: Add padding inside the content */
 }
