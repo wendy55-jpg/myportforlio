@@ -1,12 +1,13 @@
 body {
-    margin: 0; /* Reset default browser margins */
+    margin: 0; /* Reset default margins */
     padding: 0;
-    background-color: black; /* Set a black background */
+    display: flex;
+    background-color: black; /* Add black background for the margin */
 }
 
 .content {
-    margin-left: 50px; /* Adjust the size of the left margin */
-    background-color: white; /* Ensure content has a white background */
-    padding: 20px; /* Add some padding inside the content */
+    margin-left: 1in; /* Create a 1-inch margin on the left */
+    background-color: white; /* Set the content background to white */
+    width: calc(100% - 1in); /* Adjust width to avoid overflow */
+    padding: 20px; /* Optional: Add padding inside the content */
 }
-  }
