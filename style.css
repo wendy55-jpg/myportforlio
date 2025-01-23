@@ -5,7 +5,7 @@ body {
 }
 
 .black-margin {
-    width: 1in; /* Set the width to 1 inch */
+    width: 1.5in; /* Set the width to 1 inch */
     background-color: black; /* Black color for the margin */
     height: 100vh; /* Full viewport height for the margin */
 }
