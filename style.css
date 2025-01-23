@@ -1,9 +1,16 @@
-body {
-    margin: 0; /* Remove default margins */
+* {
+    margin: 0;
     padding: 0;
-    display: flex; /* Use flexbox for side-by-side layout */
+    box-sizing: border-box; /* Ensures padding and margin don't affect layout */
+}
+
+body {
+    display: flex;
+    height: 100vh; /* Ensures the body takes up the full height */
+    width: 100%;
     font-family: Arial, sans-serif;
 }
+
 
 .pink-margin {
     width: 2in; /* Set the width to 1 inch */
