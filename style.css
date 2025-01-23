@@ -2,9 +2,10 @@ body {
     margin: 0; /* Remove default margins */
     padding: 0;
     display: flex; /* Use flexbox for side-by-side layout */
+    font-family: Arial, sans-serif;
 }
 
-.black-margin {
+.pink-margin {
     width: 2in; /* Set the width to 1 inch */
     background-color: #FFB6C1; /* Pink color for the margin */
     height: 100vh; /* Full viewport height for the margin */
@@ -13,5 +14,23 @@ body {
 .content {
     flex-grow: 1; /* Allow the content to take up remaining space */
     background-color: white; /* White background for the content */
-    padding: 20px; /* Optional: Add padding inside the content */
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    align-items: center; /* Vertically align the text */
+}
+
+.name {
+    font-size: 3em; /* Larger font size for the name */
+    font-weight: bold;
+    margin-right: 10px; /* Space between name and "Portfolio" */
+}
+
+.portfolio {
+    font-size: 1.5em; /* Smaller font size for "Portfolio" */
+    font-weight: lighter;
 }
