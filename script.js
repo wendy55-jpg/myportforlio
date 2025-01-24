@@ -36,4 +36,10 @@ function showSection(sectionId) {
     const sectionToShow = document.getElementById(sectionId);
     sectionToShow.classList.remove("hide-section");
     sectionToShow.classList.add("show-section");
+
+    setTimeout(function() {
+        headerElements.forEach(function(headerElement) {
+            headerElement.classList.remove("hide-header");
+        });
+    }, 800); 
 }
