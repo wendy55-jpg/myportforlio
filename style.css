@@ -21,20 +21,21 @@ body {
 .content {
     flex-grow: 1; /* Allow the content to take up remaining space */
     background-color: white; /* White background for the content */
-    color: black;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
+    padding-left: 1in;
 }
 .header {
     display: flex;
-    align-items: center; /* Vertically align the text */
+    flex-direction: column; /* Stack text vertically */
+    align-items: flex-start;
 }
 
 .name {
     font-size: 3em; /* Larger font size for the name */
     font-weight: bold;
-    margin-right: 10px; /* Space between name and "Portfolio" */
 }
 
 .portfolio {
