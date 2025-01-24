@@ -18,22 +18,12 @@ document.querySelector(".button-56:nth-child(5)").addEventListener("click", func
     showSection("contact");
 });
 
-function showSection(sectionId) {
-    // Hide all sections first
-    const sections = document.querySelectorAll(".section");
-    sections.forEach(function(section) {
-        section.classList.remove("show-section");
-        section.classList.add("hide-section");
-    });
 
-    // Hide the header (name, portfolio, gif)
-    const headerElements = document.querySelectorAll(".header, .gif");
-    headerElements.forEach(function(headerElement) {
-        headerElement.classList.add("hide-header");
+function scrollToSection(sectionId) {
+    const sectionToScroll = document.getElementById(sectionId);
+    
+    sectionToScroll.scrollIntoView({
+        behavior: "smooth",
+        block: "start" // Scroll to the start of the section
     });
-
-    // Show the clicked section
-    const sectionToShow = document.getElementById(sectionId);
-    sectionToShow.classList.remove("hide-section");
-    sectionToShow.classList.add("show-section");
 }
