@@ -23,13 +23,12 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;  /* Ensure buttons are aligned at the top */
+    align-items: center;  /* Center the buttons horizontally */
+    justify-content: center;  /* Center the buttons vertically */
     gap: 20px;
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 20px;  /* Space from the top for the buttons */
 }
 
 .button-56 {
