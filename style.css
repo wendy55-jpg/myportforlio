@@ -23,12 +23,26 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center the buttons horizontally */
-    justify-content: center;  /* Center the buttons vertically */
+    align-items: center;
+    justify-content: flex-start;
     gap: 20px;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+    background-color: #111;
 }
 
 .button-56 {
@@ -53,35 +67,14 @@ body {
     transition: all 0.3s ease;
 }
 
-.button-56:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform 0.2s ease-out;
-    z-index: -1;
-}
-
-.button-56:hover:after {
-    transform: translate(0, 0);
-}
-
 .content {
     flex-grow: 1;
     background-color: white;
     display: flex;
-    justify-content: center; /* Center the content */
+    justify-content: center;
     align-items: center;
     height: 100vh;
     padding-left: 3in;
-    overflow: hidden;
-    transition: all 0.3s ease;
 }
 
 .header {
@@ -89,11 +82,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
-}
-
-.name {
-    font-size: 3em;
-    font-weight: bold;
 }
 
 .pacifico-regular {
@@ -118,25 +106,17 @@ body {
 .section {
     display: none;
     padding: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     text-align: center;
     font-size: 1.5em;
 }
 
 .show-section {
-    display: flex;
-    opacity: 1;
     display: block;
 }
 
 .hide-section {
-    opacity: 0;
-    
     display: none;
-    pointer-events: none; /* Disable interaction when hidden */
 }
-
 .hide-header {
     opacity: 0;
     transition: opacity 1s ease-in-out;
