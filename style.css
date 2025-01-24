@@ -126,14 +126,14 @@ body {
 
 .show-section {
     opacity: 1;
-    visibility: visible; /* Make it visible */
-    transition: opacity 0.6s ease-in-out, visibility 0s; /* Smooth fade-in */
+    display: block;
 }
 
 .hide-section {
     opacity: 0;
-    visibility: hidden; /* Hide the element without removing it from the layout */
-    transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Fade-out and delay the visibility change */
+    
+    display: none;
+    pointer-events: none; /* Disable interaction when hidden */
 }
 
 .hide-header {
