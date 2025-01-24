@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <!-- Pink margin with hamburger menu (3 lines) -->
+        <!-- Pink Margin with Hamburger and Buttons -->
         <div class="pink-margin">
-            <div class="hamburger" id="hamburger">
+            <div id="hamburger" class="hamburger">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <button class="button-56" id="aboutButton">About Me</button>
-            <button class="button-56" id="educationButton">Education</button>
-            <button class="button-56" id="skillsButton">Skills</button>
-            <button class="button-56" id="projectsButton">Projects</button>
-            <button class="button-56" id="contactButton">Contact Me</button>
+            <button id="aboutButton" class="button-56">About Me</button>
+            <button id="educationButton" class="button-56">Education</button>
+            <button id="skillsButton" class="button-56">Skills</button>
+            <button id="projectsButton" class="button-56">Projects</button>
+            <button id="contactButton" class="button-56">Contact Me</button>
         </div>
 
-        <!-- Content section with name, portfolio, and gif -->
+        <!-- Content Section -->
         <div class="content">
-            <div class="header" id="header">
+            <div id="header" class="header">
                 <span class="pacifico-regular">Shwe Wady</span>
                 <span class="portfolio">Professional Portfolio</span>
             </div>
-            <img src="images/Glaptop.gif" alt="
+            <img id="gif" src="images/Glaptop.gif" alt="Glaptop" class="gif">
+
+            <!-- Sections -->
+            <div class="section" id="about">About Me content...</div>
+            <div class="section" id="education">Education content...</div>
+            <div class="section" id="skills">Skills content...</div>
+            <div class="section" id="projects">Projects content...</div>
+            <div class="section" id="contact">Contact Me content...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
