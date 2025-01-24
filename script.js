@@ -3,6 +3,17 @@ document.getElementById('hamburger').addEventListener('click', function() {
     // Toggle visibility of buttons
     const buttons = document.querySelectorAll('.button-56');
     buttons.forEach(button => button.classList.toggle('show-section'));
+
+    // Toggle visibility of header (name, portfolio, gif)
+    const header = document.getElementById('header');
+    const gif = document.getElementById('gif');
+    if (header.classList.contains('hide-header')) {
+        header.classList.remove('hide-header');
+        gif.classList.remove('hide-header');
+    } else {
+        header.classList.add('hide-header');
+        gif.classList.add('hide-header');
+    }
 });
 
 // Button click functionality to scroll to section
