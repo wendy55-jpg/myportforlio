@@ -50,3 +50,8 @@ body {
     font-size: 1.5em; /* Smaller font size for "Portfolio" */
     font-weight: lighter;
 }
+
+.gif {
+  width: 200px; /* Adjust the size of the GIF as needed */
+  height: auto;
+}
