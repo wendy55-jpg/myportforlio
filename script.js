@@ -26,9 +26,14 @@ function showSection(sectionId) {
         section.classList.add("hide-section");
     });
 
+    // Hide the header (name, portfolio, gif)
+    const headerElements = document.querySelectorAll(".header, .gif");
+    headerElements.forEach(function(headerElement) {
+        headerElement.classList.add("hide-header");
+    });
+
     // Show the clicked section
     const sectionToShow = document.getElementById(sectionId);
     sectionToShow.classList.remove("hide-section");
     sectionToShow.classList.add("show-section");
 }
-   
