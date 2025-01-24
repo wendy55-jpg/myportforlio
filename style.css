@@ -52,6 +52,7 @@ body {
 }
 
 .gif {
-  width: 200px; /* Adjust the size of the GIF as needed */
+  width: 500px; /* Adjust the size of the GIF as needed */
   height: auto;
+  margin-left: 100px;
 }
