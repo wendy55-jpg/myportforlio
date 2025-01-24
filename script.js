@@ -1,19 +1,33 @@
-function showContent(section) {
-    // Hide current content (name, portfolio text, and gif) with animation
-    const currentContent = document.querySelector('.content');
-    currentContent.classList.add('hide-section');
+document.querySelector(".button-56:nth-child(1)").addEventListener("click", function() {
+    showSection("about");
+});
 
-    // Wait for the content to fade out before showing new content
-    setTimeout(function () {
-        // Hide all sections
-        const sections = document.querySelectorAll('.section');
-        sections.forEach(sec => sec.style.display = 'none');
+document.querySelector(".button-56:nth-child(2)").addEventListener("click", function() {
+    showSection("education");
+});
 
-        // Show the selected section with animation
-        const selectedSection = document.getElementById(section);
-        selectedSection.classList.add('show-section');
+document.querySelector(".button-56:nth-child(3)").addEventListener("click", function() {
+    showSection("skills");
+});
 
-        // Reset the visibility of the content area after the animation
-        currentContent.classList.remove('hide-section');
-    }, 1000); // This timeout should match the duration of the fadeOut animation
+document.querySelector(".button-56:nth-child(4)").addEventListener("click", function() {
+    showSection("projects");
+});
+
+document.querySelector(".button-56:nth-child(5)").addEventListener("click", function() {
+    showSection("contact");
+});
+
+function showSection(sectionId) {
+    // Hide all sections first
+    const sections = document.querySelectorAll(".section");
+    sections.forEach(function(section) {
+        section.classList.remove("show-section");
+        section.classList.add("hide-section");
+    });
+
+    // Show the clicked section
+    const sectionToShow = document.getElementById(sectionId);
+    sectionToShow.classList.remove("hide-section");
+    sectionToShow.classList.add("show-section");
 }
