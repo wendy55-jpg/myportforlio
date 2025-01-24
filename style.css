@@ -11,6 +11,11 @@ body {
     font-family: Poppins', sans-serif;;
 }
 
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
 
 .pink-margin {
     width: 2in; /* Set the width to 1 inch */
@@ -21,6 +26,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px; /* Spacing between buttons */
+    position: fixed; /* Ensures the pink margin is fixed */
 }
 
 
@@ -79,7 +85,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    padding-left: 1in;
+    padding-left: 3in;
 }
 .header {
     display: flex;
