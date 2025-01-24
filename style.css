@@ -1,41 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and margin don't affect layout */
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
     display: flex;
-    height: 100vh; /* Ensures the body takes up the full height */
+    height: 100vh;
     width: 100%;
-    font-family: Poppins', sans-serif;
     margin: 0;
 }
 
+/* Layout wrapper */
 .wrapper {
     display: flex;
     width: 100%;
 }
 
 .pink-margin {
-    width: 2in; /* Set the width to 1 inch */
-    background-color: #FFB6C1; /* Pink color for the margin */
-    height: 100vh; /* Full viewport height for the margin */
+    width: 2in;
+    background-color: #FFB6C1;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Spacing between buttons */
-    position: fixed; /* Ensures the pink margin is fixed */
+    gap: 20px;
+    position: fixed;
+    z-index: 10;
 }
 
-
+/* Button styling */
 .button-56 {
     align-items: center;
     background-color: #fee6e3;
     border: 2px solid #111;
     border-radius: 8px;
-    box-sizing: border-box;
     color: #111;
     cursor: pointer;
     display: flex;
@@ -44,14 +45,9 @@ body {
     height: 48px;
     justify-content: center;
     line-height: 24px;
-    max-width: 100%;
     padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    touch-action: manipulation;
     width: 80%;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -76,68 +72,69 @@ body {
 
 .button-56:active {
     background-color: #ffdeda;
-    outline: 0;
 }
 
+/* Content area */
 .content {
-    flex-grow: 1; /* Allow the content to take up remaining space */
-    background-color: white; /* White background for the content */
+    flex-grow: 1;
+    background-color: white;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     padding-left: 3in;
-    overflow: hidden;
     transition: all 0.3s ease;
-}
-.header {
-    display: flex;
-    flex-direction: column; /* Stack text vertically */
-    align-items: flex-start;
-    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
-.name {
-    font-size: 3em; /* Larger font size for the name */
-    font-weight: bold;
+/* Header styling */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center; /* Center the header text */
 }
 
 .pacifico-regular {
-    font-family: 'Pacifico', serif; /* Apply Pacifico font for the name */
-    font-weight: 400; /* Normal weight */
-    font-style: normal;
-    font-size: 4em; /* Larger size for the name */
+    font-family: 'Pacifico', serif;
+    font-size: 4em;
     color: #333;
 }
 
 .portfolio {
-    font-size: 1.5em; /* Smaller font size for "Portfolio" */
-    font-weight: lighter;
+    font-size: 1.5em;
+    color: #555;
 }
 
 .gif {
-  width: 500px; /* Adjust the size of the GIF as needed */
-  height: auto;
-  margin-left: 100px;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
 }
+
+/* Section styles */
 .section {
-    display: none; /* Hide all sections by default */
+    display: none;
     padding: 20px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    text-align: center;
     font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Ensure it doesn't stretch too wide */
 }
 
-
-/* Animation for showing sections */
+/* Show section with fade-in effect */
 .show-section {
     display: block;
     opacity: 1;
     animation: fadeIn 1s forwards;
 }
 
-/* Fade-in animation for content */
+/* Fade-in animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -147,8 +144,9 @@ body {
     }
 }
 
-/* Animation for hiding sections */
+/* Fade-out animation for hiding content */
 .hide-section {
+    opacity: 0;
     animation: fadeOut 1s forwards;
 }
 
@@ -160,3 +158,9 @@ body {
         opacity: 0;
     }
 }
+
+/* Hide header when switching sections */
+.hide-header {
+    display: none;
+}
+    
