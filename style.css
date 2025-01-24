@@ -116,3 +116,43 @@ body {
   height: auto;
   margin-left: 100px;
 }
+.section {
+    display: none; /* Hide all sections by default */
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#about, #education, #skills, #projects, #contact {
+    display: none;
+}
+
+/* Animation for showing sections */
+.show-section {
+    display: block;
+    animation: fadeIn 1s forwards;
+}
+
+/* Fade-in animation for content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation for hiding sections */
+.hide-section {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
