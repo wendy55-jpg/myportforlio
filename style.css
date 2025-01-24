@@ -127,7 +127,6 @@ body {
 .show-section {
     opacity: 1;
     transition: opacity 0.6s ease-in-out; /* Smoother fade-in transition */
-    visibility: visible; /* Make the content visible */
 }
 
 @keyframes fadeIn {
@@ -142,7 +141,6 @@ body {
 .hide-section {
     opacity: 0;
     transition: opacity 0.3s ease-in-out; /* Fast fade-out transition */
-    visibility: hidden; /* Hide content without affecting layout */
 }
 
 @keyframes fadeOut {
