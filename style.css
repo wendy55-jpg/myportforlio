@@ -140,7 +140,7 @@ body {
 }
 
 .hide-section {
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.9s forwards;
 }
 
 @keyframes fadeOut {
