@@ -116,28 +116,12 @@ body {
 }
 
 .section {
-    display: none;
+    display: block;
     padding: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
     text-align: center;
     font-size: 1.5em;
 }
 
-.show-section {
-    display: flex;
-    opacity: 1;
-    display: block;
-}
-
 .hide-section {
-    opacity: 0;
-    
     display: none;
-    pointer-events: none; /* Disable interaction when hidden */
-}
-
-.hide-header {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
 }
