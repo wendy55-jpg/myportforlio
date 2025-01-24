@@ -130,29 +130,12 @@ body {
     transition: opacity 0.6s ease-in-out, visibility 0s; /* Smooth fade-in */
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .hide-section {
     opacity: 0;
     visibility: hidden; /* Hide the element without removing it from the layout */
     transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Fade-out and delay the visibility change */
 }
 
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 .hide-header {
     opacity: 0;
     transition: opacity 1s ease-in-out;
