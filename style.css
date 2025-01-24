@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures padding and margin don't affect layout */
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 100vh; /* Ensures the body takes up the full height */
+    height: 100vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -15,28 +15,27 @@ body {
 .wrapper {
     display: flex;
     width: 100%;
-    height: 100vh; /* Full height for the wrapper */
 }
 
 .pink-margin {
-    width: 2in; /* Set the width to 1 inch */
-    background-color: #FFB6C1; /* Pink color for the margin */
-    height: 100vh; /* Full viewport height for the margin */
+    width: 2in;
+    background-color: #FFB6C1;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px; /* Spacing between buttons */
-    position: fixed; /* Ensures the pink margin is fixed */
-    z-index: 1; /* Ensures pink margin is always on top */
+    justify-content: flex-start;  /* Ensure buttons are aligned at the top */
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;  /* Space from the top for the buttons */
 }
 
 .button-56 {
-    align-items: center;
     background-color: #fee6e3;
     border: 2px solid #111;
     border-radius: 8px;
-    box-sizing: border-box;
     color: #111;
     cursor: pointer;
     display: flex;
@@ -51,10 +50,8 @@ body {
     text-align: center;
     text-decoration: none;
     user-select: none;
-    touch-action: manipulation;
     width: 80%;
     transition: all 0.3s ease;
-    z-index: 2; /* Keep button above other elements */
 }
 
 .button-56:after {
@@ -76,52 +73,51 @@ body {
     transform: translate(0, 0);
 }
 
-.button-56:active {
-    background-color: #ffdeda;
-    outline: 0;
-}
-
 .content {
-    flex-grow: 1; /* Allow the content to take up remaining space */
-    background-color: white; /* White background for the content */
+    flex-grow: 1;
+    background-color: white;
     display: flex;
     justify-content: center; /* Center the content */
-    align-items: center; /* Center vertically */
+    align-items: center;
     height: 100vh;
-    padding-left: 3in; /* Keeps content aligned next to pink margin */
+    padding-left: 3in;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .header {
     display: flex;
-    flex-direction: column; /* Stack text vertically */
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
+.name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
 .pacifico-regular {
-    font-family: 'Pacifico', serif; /* Apply Pacifico font for the name */
-    font-weight: 400; /* Normal weight */
+    font-family: 'Pacifico', serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4em; /* Larger size for the name */
+    font-size: 4em;
     color: #333;
 }
 
 .portfolio {
-    font-size: 1.5em; /* Smaller font size for "Portfolio" */
+    font-size: 1.5em;
     font-weight: lighter;
 }
 
 .gif {
-    width: 500px; /* Adjust the size of the GIF as needed */
+    width: 500px;
     height: auto;
     margin-left: 100px;
 }
 
-/* Hide all sections by default */
 .section {
-    display: none; 
+    display: none;
     padding: 20px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -129,14 +125,12 @@ body {
     font-size: 1.5em;
 }
 
-/* Show section with fade-in animation */
 .show-section {
     display: block;
     opacity: 1;
     animation: fadeIn 1s forwards;
 }
 
-/* Fade-in animation for content */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -146,7 +140,6 @@ body {
     }
 }
 
-/* Hide section with fade-out animation */
 .hide-section {
     animation: fadeOut 1s forwards;
 }
@@ -159,4 +152,3 @@ body {
         opacity: 0;
     }
 }
-    
