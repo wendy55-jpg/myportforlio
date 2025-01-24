@@ -125,6 +125,7 @@ body {
 }
 
 .show-section {
+    display: flex;
     opacity: 1;
     display: block;
 }
