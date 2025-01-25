@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,74 @@
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-.wrapper {
-    display: flex;
+header {
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-.pink-margin {
-    width: 2in;
-    background-color: #FFB6C1;
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FF6347;
+}
+
+.home-section {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FFB6C1, #FF6347);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: white;
+    color: #FF6347;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background: #FF6347;
+    color: white;
+}
