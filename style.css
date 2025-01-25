@@ -1,20 +1,15 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
+    width: 100%;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -23,7 +18,7 @@ header {
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     padding: 15px 0;
 }
 
@@ -31,49 +26,90 @@ header {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 5px 10px;
 }
 
 .navbar a:hover {
     color: #FF6347;
 }
 
-.home-section {
+.section {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-section {
     background: linear-gradient(to right, #FFB6C1, #FF6347);
     color: white;
-    text-align: center;
 }
 
-h1 {
-    font-size: 4rem;
-    font-family: 'Pacifico', cursive;
+.about-section {
+    background: #f9f9f9;
 }
 
-p {
-    font-size: 1.5rem;
-    margin: 20px 0;
+.education-section {
+    background: #ececec;
 }
 
-.buttons {
-    margin-top: 20px;
+.experience-section {
+    background: #fff;
 }
 
-.button {
-    text-decoration: none;
-    padding: 10px 20px;
-    background: white;
-    color: #FF6347;
-    border-radius: 5px;
+.skills-section {
+    background: #f3f3f3;
+}
+
+.services-section {
+    background: #fafafa;
+}
+
+.pricing-section {
+    background: #eee;
+}
+
+.contact-section {
+    background: #f7f7f7;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
     font-weight: bold;
-    margin: 0 10px;
-    transition: background 0.3s, color 0.3s;
 }
 
-.button:hover {
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
     background: #FF6347;
     color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #FF4500;
 }
