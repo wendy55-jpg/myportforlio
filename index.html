@@ -6,6 +6,7 @@
     <title>Shwe Wady Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <header>
@@ -108,6 +109,27 @@
         </form>
     </section>
     
-     <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1200, // Animation duration in ms
+        once: true      // Only animate once
+    });
+    </script>
 </body>
+<footer style="background: #333; color: white; padding: 20px; text-align: center;">
+    <p>© 2025 Shwe Wady | Built with ❤️</p>
+    <div>
+        <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #fff;">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" style="margin: 0 10px; color: #fff;">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:shwewady@example.com" style="margin: 0 10px; color: #fff;">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</footer>
 </html>
