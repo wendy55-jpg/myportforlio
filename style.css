@@ -90,45 +90,79 @@ p {
     color: white;
 }
 
-/* Sections */
-.section {
-    height: 100vh;
+/* Section Layout */
+.container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 20px;
 }
 
-.about-section {
+.text-box {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.text-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.image-box {
+    width: 40%;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Section Specific Styles */
+#about, #experience, #services, #contact {
     background: #f9f9f9;
 }
 
-.education-section {
+#education, #skills, #pricing {
     background: #ececec;
 }
 
-.experience-section {
-    background: #fff;
+/* Alternate Image & Text Alignment */
+#education .container,
+#skills .container,
+#pricing .container {
+    flex-direction: row-reverse; /* Move image to the right */
 }
 
-.skills-section {
-    background: #f3f3f3;
+/* Section Spacing */
+section {
+    padding: 40px 0;
 }
 
-.services-section {
-    background: #fafafa;
-}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.pricing-section {
-    background: #eee;
-}
+    .text-box, .image-box {
+        width: 80%;
+    }
 
-.contact-section {
-    background: #f7f7f7;
+    .image-box img {
+        max-width: 100%;
+        height: auto;
+    }
 }
-
 /* Section Headings */
 h2 {
     font-size: 2.5rem;
