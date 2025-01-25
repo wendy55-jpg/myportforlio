@@ -11,7 +11,6 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    line-height: 1.6;
 }
 
 /* Navbar */
@@ -45,25 +44,23 @@ header {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(to right, #FFB6C1, #FFC0CB);
-    text-align: center;
+    background: linear-gradient(to right, #FFB6C1, #FFC0CB); /* Pink gradient background */
     height: 100vh;
     display: flex;
-    color: #333
-    justify-content: space-between; 
+    color: #333;
+    justify-content: space-between;
     align-items: center;
-    text-align: left;
-    flex-direction: column;
-    adding: 0 5%; /* Add some padding for the content */
-    gap: 20px;
+    padding: 0 5%; /* Padding added for content */
 }
+
+/* Left Content */
 .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
     justify-content: center;
+    max-width: 50%; /* Limit the width of the left content */
 }
-
 
 h1 {
     font-family: 'Pacifico', cursive;
@@ -99,6 +96,8 @@ p {
     background: #FF6347;
     color: white;
 }
+
+/* Right Image */
 .right-image {
     width: 50%; /* Set image to 50% of the container width */
     height: auto;
