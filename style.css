@@ -44,66 +44,26 @@ header {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(to right, #FFB6C1, #FFC0CB); /* Pink gradient background */
+    background: linear-gradient(to right, #FFB6C1, #FFC0CB);
+    text-align: center;
     height: 100vh;
     display: flex;
-    color: #333;
-    justify-content: space-between; /* Aligns items side by side */
-    align-items: center; /* Vertically center the entire content */
-    padding: 0 5%; /* Padding added for content */
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+    padding: 0 5%;
 }
 
-/* Left Content (Name, Text, and Buttons) */
 .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
-    justify-content: center; /* Vertically center the content */
-    max-width: 50%; /* Limit the width of the left content */
-    z-index: 1; /* Ensure text stays on top of image */
-    height: 100%; /* Ensure the container takes the full height of the home section */
+    justify-content: center; /* Vertically center the content within this section */
+    gap: 20px; /* Space between items */
 }
 
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Space between buttons */
-}
-
-.button {
-    text-decoration: none;
-    padding: 10px 20px;
-    background: white;
-    color: #FF6347;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: background 0.3s, color 0.3s;
-    width: 200px; /* Adjust width */
-    text-align: center;
-}
-
-.button:hover {
-    background: #FF6347;
-    color: white;
-}
-
-/* Right Image */
 .right-image {
-    width: 50%; /* Set image to 50% of the container width */
+    width: 40%; /* Set image width */
     height: auto;
-    object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
 /* Sections */
