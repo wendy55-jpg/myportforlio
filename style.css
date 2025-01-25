@@ -46,46 +46,62 @@ header {
 /* Home Section */
 .home-section {
     background: linear-gradient(to right, #FFB6C1, #FFC0CB);
-    color: white;
     text-align: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    color: #333
+    justify-content: space-between; 
     align-items: center;
+    text-align: left;
     flex-direction: column;
+    adding: 0 5%; /* Add some padding for the content */
     gap: 20px;
 }
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    justify-content: center;
+}
+
 
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 4rem;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 1.5rem;
-    margin: 10px 0 20px;
+    margin: 20px 0;
 }
 
 .buttons {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
 }
 
 .button {
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 10px 20px;
     background: white;
     color: #FF6347;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1rem;
-    transition: all 0.3s ease-in-out;
+    transition: background 0.3s, color 0.3s;
+    width: 200px; /* Adjust width */
+    text-align: center;
 }
 
 .button:hover {
     background: #FF6347;
     color: white;
+}
+.right-image {
+    width: 50%; /* Set image to 50% of the container width */
+    height: auto;
 }
 
 /* Sections */
