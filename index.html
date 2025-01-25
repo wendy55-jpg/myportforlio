@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Shwe Wady Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Pink Margin with Hamburger and Buttons -->
-        <div class="pink-margin">
-            <div id="hamburger" class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <button id="aboutButton" class="button-56">About Me</button>
-            <button id="educationButton" class="button-56">Education</button>
-            <button id="skillsButton" class="button-56">Skills</button>
-            <button id="projectsButton" class="button-56">Projects</button>
-            <button id="contactButton" class="button-56">Contact Me</button>
-        </div>
+    <header>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <!-- Content Section -->
+    <section id="home" class="home-section">
         <div class="content">
-            <div id="header" class="header">
-                <span class="pacifico-regular">Shwe Wady</span>
-                <span class="portfolio">Professional Portfolio</span>
+            <h1>Shwe Wady</h1>
+            <p>Professional Portfolio</p>
+            <div class="buttons">
+                <a href="#contact" class="button">Hire Me</a>
+                <a href="https://facebook.com" target="_blank" class="button">Facebook</a>
+                <a href="https://linkedin.com" target="_blank" class="button">LinkedIn</a>
             </div>
-            <img id="gif" src="images/Glaptop.gif" alt="Glaptop" class="gif">
-
-            <!-- Sections -->
-            <div class="section" id="about">About Me content...</div>
-            <div class="section" id="education">Education content...</div>
-            <div class="section" id="skills">Skills content...</div>
-            <div class="section" id="projects">Projects content...</div>
-            <div class="section" id="contact">Contact Me content...</div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+    </section>
 </body>
 </html>
