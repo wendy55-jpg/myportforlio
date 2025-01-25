@@ -45,20 +45,20 @@ header {
 /* Home Section */
 .home-section {
     background: linear-gradient(to right, #FFB6C1, #FFC0CB);
-    text-align: center;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Distribute space between content */
     align-items: center; /* Vertically center the content */
+    height: 100vh;
     padding: 0 5%;
 }
 
+/* Left Content */
 .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
-    justify-content: center; /* Vertically center the content within this section */
-    gap: 20px; /* Space between items */
+    justify-content: center; /* Vertically center the content */
+    gap: 20px;
 }
 h1 {
     font-family: 'Pacifico', cursive;
