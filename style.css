@@ -43,17 +43,15 @@ header {
     color: #FF6347;
 }
 
-/* Home Section */
 .home-section {
-    background: linear-gradient(to right, #FFB6C1, #FF6347);
-    color: white;
-    text-align: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
+    background: linear-gradient(to right, #FFB6C1, #FFC0CB); /* Soft pink tones */
+    color: #333; /* Dark text for contrast */
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Stylish, readable font */
 }
 
 h1 {
