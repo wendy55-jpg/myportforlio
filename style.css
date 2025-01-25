@@ -49,17 +49,19 @@ header {
     display: flex;
     color: #333;
     justify-content: space-between; /* Aligns items side by side */
-    align-items: center;
+    align-items: center; /* Vertically center the entire content */
     padding: 0 5%; /* Padding added for content */
 }
 
-/* Left Content */
+/* Left Content (Name, Text, and Buttons) */
 .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
-    justify-content: center;
+    justify-content: center; /* Vertically center the content */
     max-width: 50%; /* Limit the width of the left content */
+    z-index: 1; /* Ensure text stays on top of image */
+    height: 100%; /* Ensure the container takes the full height of the home section */
 }
 
 h1 {
@@ -101,6 +103,7 @@ p {
 .right-image {
     width: 50%; /* Set image to 50% of the container width */
     height: auto;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
 /* Sections */
