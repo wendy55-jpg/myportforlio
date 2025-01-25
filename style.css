@@ -60,6 +60,40 @@ header {
     justify-content: center; /* Vertically center the content within this section */
     gap: 20px; /* Space between items */
 }
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: white;
+    color: #FF6347;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+    width: 200px; /* Adjust width */
+    text-align: center;
+}
+
+.button:hover {
+    background: #FF6347;
+    color: white;
+}
 
 .right-image {
     width: 40%; /* Set image width */
