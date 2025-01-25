@@ -45,7 +45,7 @@ header {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(to right, #FFB6C1, #FF6347);
+    background: linear-gradient(to right, #A9A9A9, #D3D3D3);
     color: white;
     text-align: center;
     height: 100vh;
