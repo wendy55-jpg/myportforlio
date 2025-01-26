@@ -71,47 +71,39 @@ p {
 
 .buttons {
     display: flex;
-    gap: 20px; /* Increase space between the buttons */
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Center the buttons vertically */
+    gap: 20px; /* Adjust space between icons */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
 }
 
 .button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    background: #fff;
-    padding: 12px 25px; /* Adjust padding for better button sizing */
-    border-radius: 5px;
-    color: #FF6347;
+    text-decoration: none; /* Remove text underline */
+    color: #FF6347; /* Icon color */
     font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background: #FF6347;
-    color: white;
-    transform: scale(1.1);
+    color: #FF4500; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 .button i {
-    font-size: 24px;
-    margin-right: 8px; /* Adjust space between icon and text */
+    font-size: 30px; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and text */
 }
 
 @media (max-width: 768px) {
     .buttons {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        flex-direction: column; /* Stack icons vertically on smaller screens */
         gap: 15px; /* Reduce gap when stacked */
     }
 
-    .button {
-        padding: 10px 20px; /* Adjust button padding for mobile */
-    }
-
     .button i {
-        font-size: 20px; /* Slightly smaller icons on mobile */
+        font-size: 25px; /* Slightly smaller icons on mobile */
     }
 }
 
