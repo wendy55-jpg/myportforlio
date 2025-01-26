@@ -95,7 +95,10 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    height: 100vh; /* Full screen height for each section */
+    padding: 0 10%; /* Add padding for content spacing */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Ensure padding is included in size calculations */
 }
 
 .text-box {
@@ -144,7 +147,7 @@ p {
 
 /* Section Spacing */
 section {
-    padding: 40px 0;
+    padding: 0;
 }
 
 /* Media Queries for Responsiveness */
@@ -152,6 +155,7 @@ section {
     .container {
         flex-direction: column;
         align-items: center;
+        text-align: center; /* Center text for smaller screens */
     }
 
     .text-box, .image-box {
