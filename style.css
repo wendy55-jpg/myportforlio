@@ -138,10 +138,6 @@ p {
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
-#experience .container {
-    flex-direction: row; /* Text on the left, image on the right */
-}
-
 #skills .container {
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
