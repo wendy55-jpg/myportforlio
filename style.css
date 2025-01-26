@@ -49,13 +49,14 @@ header {
 
 .home-section {
     height: 100vh;
+    background-image: url('images/laptop.webp'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #FFB6C1, #FFC0CB); /* Soft pink tones */
-    color: #333; /* Dark text for contrast */
+    color: white; /* Change text color if necessary */
     text-align: center;
-    font-family: 'Poppins', sans-serif; /* Stylish, readable font */
 }
 
 h1 {
