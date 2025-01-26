@@ -130,11 +130,21 @@ p {
     border-radius: 8px;
 }
 
-/* Alternate layout for specific sections: Image on the left, Text on the right */
-#education .container,
-#skills .container,
-#pricing .container {
-    flex-direction: row-reverse; /* Reverse the order */
+/* Alternating Section Layouts */
+#about .container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+#education .container {
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+}
+
+#experience .container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+#skills .container {
+    flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
 
