@@ -138,22 +138,21 @@ p {
     background: #ececec;
 }
 
-/* Alternate Image & Text Alignment */
+/* Alternating Layout for Sections */
+#about .container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
 #education .container,
 #skills .container,
 #pricing .container {
-    flex-direction: row-reverse; /* Move image to the right */
+    flex-direction: row-reverse; /* Image on the left, text on the right */
 }
-/* Regular Layout for Other Sections */
-#about .container,
+
 #experience .container,
 #services .container,
 #contact .container {
-    flex-direction: row; /* Normal order for text and image */
-}
-/* Section Spacing */
-section {
-    padding: 0;
+    flex-direction: row; /* Text on the left, image on the right */
 }
 
 /* Media Queries for Responsiveness */
