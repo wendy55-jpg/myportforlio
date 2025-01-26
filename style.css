@@ -129,30 +129,21 @@ p {
     border-radius: 8px;
 }
 
-/* Section Specific Styles */
-#about, #experience, #services, #contact {
-    background: #f9f9f9;
-}
-
-#education, #skills, #pricing {
-    background: #ececec;
-}
-
-/* Alternating Layout for Sections */
+/* Alternating Section Layouts */
 #about .container {
     flex-direction: row; /* Text on the left, image on the right */
 }
 
-#education .container,
-#skills .container,
-#pricing .container {
+#education .container {
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
-#experience .container,
-#services .container,
-#contact .container {
+#experience .container {
     flex-direction: row; /* Text on the left, image on the right */
+}
+
+#skills .container {
+    flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
 /* Media Queries for Responsiveness */
