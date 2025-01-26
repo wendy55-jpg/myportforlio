@@ -135,7 +135,7 @@ p {
 }
 
 #education .container {
-    flex-direction: row-reverse; /* Image on the left, text on the right */
+    flex-direction: row; /* Image on the left, text on the right */
 }
 
 #experience .container {
