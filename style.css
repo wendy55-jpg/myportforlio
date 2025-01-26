@@ -144,7 +144,13 @@ p {
 #pricing .container {
     flex-direction: row-reverse; /* Move image to the right */
 }
-
+/* Regular Layout for Other Sections */
+#about .container,
+#experience .container,
+#services .container,
+#contact .container {
+    flex-direction: row; /* Normal order for text and image */
+}
 /* Section Spacing */
 section {
     padding: 0;
