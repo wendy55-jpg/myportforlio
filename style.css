@@ -75,21 +75,27 @@ p {
 }
 
 .button {
-    display: inline-block; /* Makes the link behave like a button */
+    display: inline-flex; /* Makes the link behave like a button */
+    align-items: center;
+    justify-content: center;
     text-decoration: none; /* Remove underlines */
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FF6347;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.button-image {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
-}
-.button-image:hover {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
-}
 .button:hover {
     background: #FF6347;
     color: white;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+.button i {
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and text */
 }
 
 /* Section Layout */
