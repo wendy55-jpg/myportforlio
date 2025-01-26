@@ -99,7 +99,6 @@ p {
     padding: 0 10%; /* Add padding for content spacing */
     text-align: left; /* Align text to the left */
     box-sizing: border-box; /* Ensure padding is included in size calculations */
-    flex-direction: row; 
 }
 
 .text-box {
@@ -147,6 +146,13 @@ p {
     flex-direction: row-reverse; /* Image on the left, text on the right */
 }
 
+#pricing .container {
+    flex-direction: row; /* Text on the left, image on the right */
+}
+
+#contact .container {
+    flex-direction: row-reverse; /* Image on the left, text on the right */
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
