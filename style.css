@@ -75,16 +75,18 @@ p {
 }
 
 .button {
-    text-decoration: none;
-    padding: 10px 25px;
-    background: white;
-    color: #FF6347;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Makes the link behave like a button */
+    text-decoration: none; /* Remove underlines */
 }
 
+.button-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+.button-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
 .button:hover {
     background: #FF6347;
     color: white;
